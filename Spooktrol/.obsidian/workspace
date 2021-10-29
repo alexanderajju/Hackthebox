@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "a779c3ee2c95db5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "98c16ad6c59e9984",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "spooktrol.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b622f51780057f5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "35035a362790b869",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6435cb673a81c136",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c8c9986b8a0b7031",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cc3687ec4aa7fd88",
+    "type": "split",
+    "children": [
+      {
+        "id": "92f8f6152b7ec7fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bfa92a578aad851",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "spooktrol.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "98c16ad6c59e9984",
+  "lastOpenFiles": [
+    "spooktrol.md",
+    "Pasted image 20211028165651.png",
+    "Pasted image 20211028165920.png",
+    "Pasted image 20211028170055.png",
+    "Pasted image 20211028170359.png"
+  ]
+}
