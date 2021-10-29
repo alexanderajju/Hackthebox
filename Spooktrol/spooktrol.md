@@ -163,7 +163,7 @@ upload the public to root's authorized_keys
 
 Logged in as root in docker.
 
-![](Pasted image 20211028185502.png)
+![user](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028185502.png)
 
 insert reverse into database task
 
