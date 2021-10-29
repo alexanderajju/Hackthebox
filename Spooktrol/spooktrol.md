@@ -69,9 +69,9 @@ wget 'http://10.10.11.123/file_management/?file=implant'
 
 On running the binary hit some error regarding `json`
 
-![](Pasted image 20211028162957.png)
+![](https://github.com/alexanderajju/Hackthebox/blob/master/Spooktrol/Pasted image 20211028162957.png)
 
-![imGE](/home/aju/Hackthebox/Notes/Spooktrol/Pasted image 20211028165356.png)
+
 
 Running wireshark 
 
