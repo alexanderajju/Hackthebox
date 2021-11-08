@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "00bb5a287829071b",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a1dd60dee5868a4",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Pivot.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ac04b7a05a6265d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f73479ba1468a95d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd127e18eec22d2c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "bc591bdc74ff6ee8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5b53b025dedb69fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5d871493ebf0bda",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51cf4c1c699d6600",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pivot.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3a1dd60dee5868a4",
+  "lastOpenFiles": [
+    "Pivot.md",
+    "20211107171322.png",
+    "20211107165200.png",
+    "20211107164946.png",
+    "20211107161352.png",
+    "20211107161231.png",
+    "20211107161147.png",
+    "20211107160241.png",
+    "20211107082542.png",
+    "20211107082113.png"
+  ]
+}
